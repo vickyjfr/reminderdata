@@ -24,7 +24,6 @@
     static dispatch_once_t once;
     dispatch_once(&once, ^{
         manager = [[self alloc] init];
-        
     });
     return manager;
 }
