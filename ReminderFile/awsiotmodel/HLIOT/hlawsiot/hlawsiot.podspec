@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "hlawsiot"   #库名称
-    s.version      = "0.0.0.1"    #
+    s.version      = "0.0.0.1"    #库版本
     s.summary      = "hlawsiot"
 
     s.description  = <<-DESC
@@ -26,5 +26,8 @@ Pod::Spec.new do |s|
       end
     
     s.dependency  'AFNetworking', '~> 2.6.3'
+    $awsVersion = '~> 2.9.0'
+    s.dependency  'AWSCore', $awsVersion
+    s.dependency  'AWSIoT', $awsVersion
     
   end
